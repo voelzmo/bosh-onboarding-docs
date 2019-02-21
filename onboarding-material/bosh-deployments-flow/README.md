@@ -69,7 +69,7 @@ In the [RouteConfiguration class](https://github.com/cloudfoundry/bosh/blob/f8d7
 controllers['/deployments'] = Bosh::Director::Api::Controllers::DeploymentsController.new(@config)
 ```
 
-The [DeploymentsController](https://github.com/cloudfoundry/bosh/blob/f8d711cb0039d876dbd821f8154fe7858332806c/src/bosh-director/lib/bosh/director/api/controllers/deployments_controller.rb#L224) uses the Sinatra DSL to define how to repsond to a request to the deployments endpoint.
+The [DeploymentsController](https://github.com/cloudfoundry/bosh/blob/f8d711cb0039d876dbd821f8154fe7858332806c/src/bosh-director/lib/bosh/director/api/controllers/deployments_controller.rb#L224) uses the Sinatra DSL to define how to respond to a request to the deployments endpoint.
 ```
 get '/', authorization: :list_deployments do ...
 ```
